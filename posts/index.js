@@ -16,7 +16,7 @@ app.get("/posts", (req, res) => {
     res.send(posts);
 })
 
-app.post("/posts", async(req, res) => {
+app.post("/posts/create", async(req, res) => {
     const id = randomBytes(4).toString("hex");
     const { title } = req.body;
     const post = {
@@ -43,5 +43,5 @@ app.post("/events", (req, res) => {
 
 app.listen(4000, () => {
     console.log("Server on port 4000");
-    console.log("Version 3");
+    console.log("Version 3v");
 })
