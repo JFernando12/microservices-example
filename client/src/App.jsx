@@ -5,7 +5,7 @@ import PostList from "./PostList";
 function App() {
   return (
     <div className="container">
-      <h1>Create Post!!!</h1>
+      <h1>Create Post</h1>
       <PostCreate></PostCreate>
       <PostList></PostList>
     </div>
